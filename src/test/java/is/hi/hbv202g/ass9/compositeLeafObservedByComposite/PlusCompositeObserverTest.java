@@ -1,7 +1,6 @@
-package is.hi.hbv202g.ass9.compositeTemplateMethod;
+package is.hi.hbv202g.ass9.compositeLeafObservedByComposite;
 
 import static org.junit.Assert.*;
-
 import org.junit.Before;
 import org.junit.Test;
 
@@ -21,7 +20,8 @@ public class PlusCompositeObserverTest {
 
 		plusComposite.update(); // This will cause stuff printed on the screen: this is not tested.
 
-		assertEquals(1, plusComposite.getLastObservedResult()); 
+		assertEquals("An observing plus composite should store in its lastObservedField the value 1 to which the observed " +
+				"leaf was set", 1, plusComposite.getLastObservedResult());
 	}
 
 }

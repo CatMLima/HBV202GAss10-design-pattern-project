@@ -19,6 +19,6 @@ public class MixedCompositeTest {
 		MultiplyComposite multiplyComposite = new MultiplyComposite();
 		multiplyComposite.add(number4);
 		multiplyComposite.add(plusComposite);
-		assertEquals(12, multiplyComposite.getResult());
+		assertEquals("(1+2)*4 should return 12", 12, multiplyComposite.getResult());
 	}
 }

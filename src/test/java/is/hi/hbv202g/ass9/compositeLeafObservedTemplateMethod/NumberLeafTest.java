@@ -1,4 +1,4 @@
-package is.hi.hbv202g.ass9.composite;
+package is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
@@ -15,3 +15,4 @@ public class NumberLeafTest {
 	}
 
 }
+

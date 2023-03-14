@@ -1,7 +1,6 @@
-package is.hi.hbv202g.ass9.compositeLeafObservedByTopLevelComposite;
+package is.hi.hbv202g.ass9.compositeLeafObservedByComposite;
 
 import static org.junit.Assert.*;
-
 import org.junit.Before;
 import org.junit.Test;
 
@@ -20,7 +19,8 @@ public class MultiplyCompositeTest {
 		NumberLeaf number2 = new NumberLeaf(2);
 
 		multiplyComposite.add(number2);
-		assertEquals(2, multiplyComposite.getResult());
+		assertEquals("A multiply composite consisting only of a leaf with value 2 should return 2",
+				2, multiplyComposite.getResult());
 	}
 
 	public void testTwoElementMultiplyComposite() {
@@ -30,7 +30,8 @@ public class MultiplyCompositeTest {
 
 		multiplyComposite.add(number2);
 		multiplyComposite.add(number4);
-		assertEquals(8, multiplyComposite.getResult());
+		assertEquals("A multiply composite consisting of leafs with values 2 and 4 should return 8",
+				8, multiplyComposite.getResult());
 	}
 
 	public void testNestedMultiplyComposite() {
@@ -44,8 +45,8 @@ public class MultiplyCompositeTest {
 		MultiplyComposite multiplyComposite2 = new MultiplyComposite();
 		multiplyComposite2.add(multiplyComposite);
 		multiplyComposite2.add(multiplyComposite);
-		assertEquals(64, multiplyComposite.getResult());
+		assertEquals("A multiply composite consisting two further multiply composites, each consisting of leafs with " +
+				"values 2 and 4 should return (2*4)*(2*4)=64", 64, multiplyComposite.getResult());
 	}
 
-	
 }

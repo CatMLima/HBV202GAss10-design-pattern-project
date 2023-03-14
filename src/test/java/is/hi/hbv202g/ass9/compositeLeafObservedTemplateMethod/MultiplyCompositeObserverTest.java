@@ -1,7 +1,6 @@
-package is.hi.hbv202g.ass9.compositeTemplateMethod;
+package is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod;
 
 import static org.junit.Assert.*;
-
 import org.junit.Before;
 import org.junit.Test;
 
@@ -22,6 +21,7 @@ public class MultiplyCompositeObserverTest {
 
 		multiplyComposite.update(); // This will cause stuff printed on the screen: this is not tested.
 
-		assertEquals(2, multiplyComposite.getLastObservedResult());
+		assertEquals("An observing multiply composite should store in its lastObservedField the value 2 to which the observed " +
+				"leaf was set", 2, multiplyComposite.getLastObservedResult());
 	}
 }

@@ -1,7 +1,6 @@
-package is.hi.hbv202g.ass9.compositeTemplateMethod;
+package is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod;
 
 import static org.junit.Assert.*;
-
 import org.junit.Before;
 import org.junit.Test;
 
@@ -21,10 +20,11 @@ public class PlusCompositeTest {
 
 	@Test
 	public void testOneElementPlusComposite() {
-		NumberLeaf number1 = new NumberLeaf(1);
+		NumberLeaf number2 = new NumberLeaf(2);
 
-		plusComposite.add(number1);
-		assertEquals(1, plusComposite.getResult());
+		plusComposite.add(number2);
+		assertEquals("A plus composite consisting only of leaf with value 2 should return 2",
+				1, plusComposite.getResult());
 	}
 
 	@Test
@@ -34,7 +34,8 @@ public class PlusCompositeTest {
 
 		plusComposite.add(number1);
 		plusComposite.add(number2);
-		assertEquals(3, plusComposite.getResult());
+		assertEquals("A plus composite consisting of leafs with values 1 and 2 should return 3",
+				3, plusComposite.getResult());
 	}
 
 	@Test
@@ -49,7 +50,8 @@ public class PlusCompositeTest {
 		plusComposite2.add(plusComposite);
 		plusComposite2.add(plusComposite);
 
-		assertEquals(6, plusComposite2.getResult());
+		assertEquals("A plus composite consisting two further plus composites, each consisting of leafs with values " +
+				"1 and 2 should return (1+2)+(1+2)=6", 6, plusComposite2.getResult());
 	}
 
 }
