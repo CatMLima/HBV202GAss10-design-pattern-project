@@ -1,1 +1,1 @@
-Add your `.java` files needed for the compositie pattern here.
+Add your `.java` files needed for the composite pattern here.
