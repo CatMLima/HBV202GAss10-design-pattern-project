@@ -24,7 +24,7 @@ public class PlusCompositeTest {
 
         plusComposite.add(number2);
         assertEquals("A plus composite consisting only of leaf with value 2 should return 2",
-                1, plusComposite.getResult());
+                2, plusComposite.getResult());
     }
 
     @Test
