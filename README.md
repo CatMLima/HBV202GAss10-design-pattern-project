@@ -1,5 +1,5 @@
 # HBV202GAssignment9
-A project skeletonto implement the composite pattern and the observer pattern based on tests using JUnit4.
+A project skeleton implementing the composite pattern and the observer pattern based on tests using JUnit4.
 
 This project is a Maven project, i.e. it uses the standard Maven project structure that your IDE hopefully understands when you `git clone` it. The provided Maven POM includes the JUnit4 dependency.
 

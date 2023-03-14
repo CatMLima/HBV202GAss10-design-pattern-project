@@ -1,6 +1,8 @@
-package is.hi.hbv202g.ass9.composite;
+package is.hi.hbv202g.ass9;
 
-public class Main {
+import is.hi.hbv202g.ass9.composite.*;
+
+public class CompositeMain {
 
 	public static void main(String[] args) {
 		NumberLeaf number1 = new NumberLeaf(1);
