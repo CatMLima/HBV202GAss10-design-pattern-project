@@ -22,7 +22,7 @@ Both the implementation and the tests are in Java package `is.hi.hbv202g.ass9`, 
 
 #### License:
 
-The project is subject to a [license](LICENSE.md) which can be viewed here.
+The project is subject to a [license](LICENSE.txt) which can be viewed here.
 
 #### UML Class Diagram:
 
