@@ -5,7 +5,7 @@ import is.hi.hbv202g.ass9.compositeLeafObservedByComposite.Observer;
 
 import java.util.*;
 
-public class MultiplyComposite extends MixedComposite implements MathExpression, Observer {
+public class MultiplyComposite {
     int result = 1;
     private List<MathExpression> children = new ArrayList<MathExpression>();
 
@@ -14,7 +14,7 @@ public class MultiplyComposite extends MixedComposite implements MathExpression,
         children.add(mathExpression);
     }
 
-    @Override
+
     public int getResult() {
         int pointer = 0;
         int size = children.size();
@@ -25,7 +25,6 @@ public class MultiplyComposite extends MixedComposite implements MathExpression,
         return result;
     }
 
-    @Override
     public void update() {
         lastObservedResult = getResult();
         System.out.println(lastObservedResult);

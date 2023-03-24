@@ -5,7 +5,7 @@ import is.hi.hbv202g.ass9.compositeLeafObservedByComposite.Observer;
 
 import java.util.*;
 
-public class PlusComposite extends MixedComposite implements MathExpression, Observer {
+public class PlusComposite extends MixedComposite{
     int result = 0;
 
     int lastObservedResult = 0;
@@ -18,7 +18,7 @@ public class PlusComposite extends MixedComposite implements MathExpression, Obs
     protected void add(MathExpression mathExpression){
         children.add(mathExpression);
     }
-    @Override
+
     public int getResult() {
         int pointer = 0;
         int size = children.size();
@@ -29,7 +29,6 @@ public class PlusComposite extends MixedComposite implements MathExpression, Obs
         return result;
     }
 
-    @Override
     public void update() {
         lastObservedResult = getResult();
         System.out.println(lastObservedResult);

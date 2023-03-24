@@ -1,4 +1,4 @@
-# HBV202GAssignment9
+# HBV202GAssignment10
 A project skeleton for implementing the composite pattern and the observer pattern (and some sort of template method pattern) based on tests using JUnit4.
 
 This project is a Maven project, i.e. it uses the standard Maven project structure that your IDE hopefully understands when you `git clone` it. The provided Maven POM includes the JUnit4 dependency.
@@ -14,8 +14,18 @@ Both the implementation and the tests are in Java package `is.hi.hbv202g.ass9`, 
   - `is.hi.hbv202g.ass9.compositeLeafObservedByComposite`: Test cases testing an implementation of a composite where the leafs are observed by the composite implementation.
   - `is.hi.hbv202g.ass9.compositeLeafObservedTemplateMethod`: The same test cases for testing the refactoring of the above patterns inspired by the template method pattern.
 
-Maven:
+#### Maven:
 
 - `mvn compile` compiles all implementation classes.
+- `mvn exec` runs the program
 - `mvn test` runs all test cases (i.e. all classes with a name that either starts with `Test` or ends with `Test`, `Tests`, or `TestCase`).
+
+#### License:
+
+The project is subject to a [license](LICENSE.md) which can be viewed here.
+
+#### UML Class Diagram:
+
+The project UML class diagram can be found [here](src/site/markdown/markdown.md).
+
 
