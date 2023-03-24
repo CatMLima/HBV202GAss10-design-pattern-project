@@ -16,7 +16,7 @@ public class NumberLeafObservedTest implements Observer {
 
 	@Test
 	public void testAttachAndUpdateAfterSetValue() {
-		number1.attach(this);
+		number1.attach((is.hi.hbv202g.ass9.compositeLeafObservedByComposite.Observer) this);
 		number1.setValue(3);
 
 		assertEquals("A leaf observed by this testcase should call update method of this testcase after having " +
